@@ -12,11 +12,11 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content="Digital Marketing for Escorts & Agencies | Your Escort Web">
 <meta property="og:description" content="Premium digital marketing for escorts, models & agencies. SEO, paid ads, branding, social media growth and reputation management — get more bookings.">
-<meta property="og:image" content="https://yourescortweb.com/assets/hero-bg.jpg">
+<meta property="og:image" content="https://yourescortweb.com/wp-content/uploads/2026/05/hero-bg.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Digital Marketing for Escorts & Agencies | Your Escort Web">
 <meta name="twitter:description" content="Premium digital marketing for escorts, models & agencies. SEO, paid ads, branding, social media growth and reputation management — get more bookings.">
-<meta name="twitter:image" content="https://yourescortweb.com/assets/hero-bg.jpg">
+<meta name="twitter:image" content="https://yourescortweb.com/wp-content/uploads/2026/05/hero-bg.jpg">
 </head>
 
 <body>
@@ -285,9 +285,12 @@
 }
 #yew-mkt .hero-title {
   font-family: var(--serif);
-  font-size: clamp(3.8rem, 9vw, 10.5rem);
-  font-weight: 300; line-height: 0.97; letter-spacing: -0.02em;
+  font-size: clamp(3.4rem, 6vw, 6.5rem) !important;
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
   text-shadow: 0 0 80px rgba(0,0,0,0.8);
+  max-width: 700px;
 }
 #yew-mkt .hero-title em {
   font-style: italic; color: var(--gold); display: block;
@@ -762,14 +765,68 @@
   #yew-mkt .feature-visual { aspect-ratio: 3/2; }
 }
 @media (max-width: 600px) {
-  #yew-mkt .services-grid { grid-template-columns: repeat(2, 1fr); }
-  #yew-mkt .ad-channels { grid-template-columns: 1fr; }
+
+  #yew-mkt .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #yew-mkt .ad-channels {
+    grid-template-columns: 1fr;
+  }
+
   #yew-mkt .hero-ctas,
-  #yew-mkt .cta-buttons { flex-direction: column; align-items: flex-start; }
-  #yew-mkt .cta-buttons { align-items: center; }
-  #yew-mkt .hero-title { font-size: 2.6rem; }
+  #yew-mkt .cta-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #yew-mkt .cta-buttons {
+    align-items: center;
+  }
+
+#yew-mkt .hero-title {
+  font-size: clamp(2.8rem, 11vw, 4.2rem) !important;
+  line-height: 0.95;
 }
 
+  #yew-mkt .hero-content {
+    padding: 120px 7vw 70px;
+  }
+
+}
+/* FORCE WHITE TEXT */
+#yew-mkt,
+#yew-mkt p,
+#yew-mkt h1,
+#yew-mkt h2,
+#yew-mkt h3,
+#yew-mkt h4,
+#yew-mkt h5,
+#yew-mkt h6,
+#yew-mkt li,
+#yew-mkt span,
+#yew-mkt a {
+  color: var(--white) !important;
+}
+
+/* GOLD ELEMENTS */
+#yew-mkt .gold,
+#yew-mkt em,
+#yew-mkt .section-label,
+#yew-mkt .hero-eyebrow,
+#yew-mkt .platform-pill:hover,
+#yew-mkt .tier-badge,
+#yew-mkt .footer-brand {
+  color: var(--gold) !important;
+}
+
+/* PREMIUM SOFT TEXT */
+#yew-mkt p,
+#yew-mkt li,
+#yew-mkt .section-desc,
+#yew-mkt .hero-subtitle {
+  color: rgba(248,246,242,0.65) !important;
+}
 </style>
 
 
@@ -780,7 +837,7 @@
   <!-- ══ HERO ══════════════════════════════════════════ -->
   <section id="hero">
     <div class="hero-bg">
-      <img src="assets/hero-bg.jpg" alt="Two escorts in black lace lingerie representing the luxury personal branding and digital marketing services for escorts and agencies by Your Escort Web">
+      <img src="https://yourescortweb.com/wp-content/uploads/2026/05/hero-bg.jpg" alt="Two escorts in black lace lingerie representing the luxury personal branding and digital marketing services for escorts and agencies by Your Escort Web">
     </div>
     <div class="hero-grain"></div>
     <div class="hero-content">
@@ -1429,10 +1486,6 @@
   });
 })();
 </script>
-
-<!-- ======================================================
-     END ELEMENTOR PASTE
-======================================================= -->
 
 </body>
 </html>
