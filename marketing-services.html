@@ -293,10 +293,10 @@
     line-height: 1.85;
   }
   .services-grid {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5px;
     background: var(--gold-line);
     border: 1px solid var(--gold-line);
@@ -1034,8 +1034,11 @@
     #footer-strip { justify-content: center; text-align: center; }
     .feature-visual { aspect-ratio: 3/2; }
   }
+  @media (max-width: 900px) {
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+  }
   @media (max-width: 600px) {
-    .services-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
     .ad-channels { grid-template-columns: 1fr; }
     .hero-ctas, .cta-buttons { flex-direction: column; align-items: flex-start; }
     .cta-buttons { align-items: center; }
