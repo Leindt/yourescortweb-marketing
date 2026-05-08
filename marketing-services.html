@@ -1452,8 +1452,16 @@
     .positioning-tiers { grid-template-columns: 1fr; }
     .brand-elements { grid-template-columns: 1fr; }
     .hero-content { padding: 100px 5vw 60px; }
-    .footer-nav { display: none; }
-    #footer-strip { justify-content: center; text-align: center; }
+    #footer-strip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.4rem;
+      text-align: center;
+      padding: 2rem 5vw;
+    }
+    #footer-strip .footer-copy { text-align: center; }
+    .footer-nav { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
     .feature-visual { aspect-ratio: 3/2; }
   }
   @media (max-width: 900px) {
